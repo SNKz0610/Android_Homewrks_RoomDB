@@ -8,4 +8,7 @@ import com.snkz.room_db_excercises.entity.Email
 interface EmailDao {
     @Insert
     fun addEmail(email : Email)
+
+    @Insert
+    fun addEmail(email : List<Email>)
 }
