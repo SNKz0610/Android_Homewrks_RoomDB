@@ -5,8 +5,10 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "email")
 data class Email(
-    @PrimaryKey(autoGenerate = true) val id : Long = 0,
     val senderEmail : String,
     val title : String,
     val content : String
-    )
+    ) {
+    @PrimaryKey(autoGenerate = true)
+    var id: Long = 0
+}
